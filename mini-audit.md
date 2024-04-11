@@ -66,7 +66,7 @@ contract Pool is ReentrancyGuard {
     /**
      * Swap token for ETH
      * @param _amount The amount of the ERC-20 token to swap.
-     **/
+     */
     function swapTokenForEth(uint256 _amount) external nonReentrant {
         (uint256 x, uint256 y) = getReserves();
         require(x > 0 && y > 0, "Insufficient pool liquidity");
