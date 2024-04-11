@@ -33,9 +33,4 @@ contract PoolTest is Test {
 
         assertLt(endingBalance - startingBalance, beta);
     }
-
-    // function test_Increment() public {
-    //     counter.increment();
-    //     assertEq(counter.number(), 1);
-    // }
 }
